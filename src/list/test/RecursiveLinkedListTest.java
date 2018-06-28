@@ -1,4 +1,4 @@
-package test.list; 
+package list.test;
 
 import list.RecursiveLinkedList;
 import org.junit.Test;
