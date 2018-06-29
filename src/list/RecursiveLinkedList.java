@@ -85,10 +85,10 @@ public class RecursiveLinkedList<T> {
 
     }
 
-    public RecursiveLinkedList<T> getNodeAtIndex(int index) throws NoSuchElementException {
+    public RecursiveLinkedList<T> getNodeAtIndex(int index) throws NoSuchElementException, IndexOutOfBoundsException {
 
         if (checkIfOutOfBounds(index))
-            throw new NoSuchElementException();
+            throw new IndexOutOfBoundsException();
 
         RecursiveLinkedList<T> node = getNodeAtIndex(0, this, index);
 

@@ -133,7 +133,7 @@ public class RecursiveLinkedListTest {
      * Method: getNodeAtIndex(int index)
      *
      */
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void getNodeAtNegativeIndexExceptionTest() {
         linkedList.getNodeAtIndex(-1);
     }
@@ -143,7 +143,7 @@ public class RecursiveLinkedListTest {
      * Method: getNodeAtIndex(int index)
      *
      */
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void getNodeAtLargeIndexTestExceptionTest() {
         linkedList.getNodeAtIndex(Integer.MAX_VALUE);
     }
