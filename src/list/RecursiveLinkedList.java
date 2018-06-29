@@ -101,6 +101,10 @@ public class RecursiveLinkedList<T> {
 
     private RecursiveLinkedList<T> getNodeAtIndex(int currentIndex, RecursiveLinkedList<T> currentNode, int index) {
 
+        if (null == currentNode) {
+            return null;
+        }
+
         if (currentIndex == index) {
             return currentNode;
         }
